@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Platform with Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <section id="posts">
+            <!-- Blog posts will be dynamically inserted here -->
+        </section>
+
+        <section id="new-post">
+            <h2>Add a New Post</h2>
+            <form id="post-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="5" required></textarea>
+
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <img id="image-preview" alt="Image Preview" style="display:none; margin-top: 10px; max-width: 100%; height: auto;">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
